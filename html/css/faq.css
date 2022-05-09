@@ -1,0 +1,23 @@
+body {
+  background-image: url(../images/background_faq.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.button {
+  width: 15vw;
+  height: 7vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  position: relative;
+  top: 40vh;
+}

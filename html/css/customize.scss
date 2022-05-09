@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+}
+
+@font-face {
+	font-family: fifaks;
+	src: url(../fonts/fifaks.ttf);
+	font-weight: 300;
+}
+
+body{
+	color: #fff;
+	font-size: calc(var(--index) * 1.0);
+	font-family: fifaks,
+	sans-serif;
+	line-height: 1.75;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:checked,
+a:link,
+a:visited {
+	color: #FFF;
+}
+
+a:focus,
+a:hover,
+a:active {
+	color: lightgrey;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.frame{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#side-checkbox {
+	display: none;
+}
+
+.side-panel {
+	position: fixed;
+	left: -36vw;
+	transition: all 0.5s;
+	width: 20vw;
+	height: 100vh;
+	color: #fff;
+	padding: 2vh 3vw;
+}
+
+.side-title {
+	font-size: 3vh;
+	margin-bottom: 1vh;
+	border-bottom: 0.25vh solid #BFE2FF;
+}
+
+.side-button-1-wr {
+	position: fixed;
+	left: 3vw;
+	top: 2.25vh;
+}
+
+.side-button-1 {
+	display: inline-block;
+}
+
+.side-button-1 .side-b {
+	text-decoration: none;
+	position: relative;
+	font-size: calc(var(--index));
+	color: #FFF;
+	font-weight: bold;
+	font-family: 'Roboto', Тahoma, sans-serif;
+}
+
+.side-button-1 .side-b:active {
+	opacity: 0.5;
+}
+
+
+
+.side-button-1 .side-close {
+	display: none;
+}
+
+#side-checkbox:checked+.side-panel+.side-button-1-wr .side-button-1 .side-open {
+	display: none;
+}
+
+#side-checkbox:checked+.side-panel+.side-button-1-wr .side-button-1 .side-close {
+	display: block;
+}
+
+#side-checkbox:checked+.side-panel {
+	left: 2.5vw;
+}
+
+#download {
+	background: url(/images/download.svg) no-repeat center;
+}
+
+#github {
+	background: url(/images/github.svg) no-repeat center;
+}
+
+#twitter {
+	background: url(/images/twitter.svg) no-repeat center;
+}
+
+#telegram {
+	background: url(/images/telegram.svg) no-repeat center;
+}
+
+#discord {
+	background: url(/images/discord.svg) no-repeat center;
+}

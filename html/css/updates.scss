@@ -1,0 +1,16 @@
+
+body{
+	background-image: url(../images/background_history.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+.text{
+	position: absolute;
+	top: 50vh;
+	p{
+		font-size: 150%;
+	}
+}

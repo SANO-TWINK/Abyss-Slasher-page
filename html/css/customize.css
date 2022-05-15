@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: fifaks;
+  src: url(../fonts/fifaks.ttf);
+  font-weight: 300;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,16 +16,10 @@
   --index: calc(1vw + 1vh);
 }
 
-@font-face {
-  font-family: fifaks;
-  src: url(../fonts/fifaks.ttf);
-  font-weight: 300;
-}
-
 body {
   color: #fff;
   font-size: calc(var(--index) * 1.0);
-  font-family: fifaks, sans-serif;
+  font-family: fifaks, sans-serif;
   line-height: 1.75;
   font-weight: 300;
 }
@@ -28,14 +28,26 @@ a {
   text-decoration: none;
 }
 
-a:checked,
-a:link,
+a:checked {
+  color: #FFF;
+}
+
+a:link {
+  color: #FFF;
+}
+
 a:visited {
   color: #FFF;
 }
 
-a:focus,
-a:hover,
+a:focus {
+  color: lightgrey;
+}
+
+a:hover {
+  color: lightgrey;
+}
+
 a:active {
   color: lightgrey;
 }
@@ -72,6 +84,18 @@ a:active {
   display: none;
 }
 
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+  display: none;
+}
+
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+  display: block;
+}
+
+#side-checkbox:checked + .side-panel {
+  left: 2.5vw;
+}
+
 .side-panel {
   position: fixed;
   left: -36vw;
@@ -105,7 +129,7 @@ a:active {
   font-size: calc(var(--index));
   color: #FFF;
   font-weight: bold;
-  font-family: 'Roboto', Тahoma, sans-serif;
+  font-family: "Roboto", Тahoma, sans-serif;
 }
 
 .side-button-1 .side-b:active {
@@ -114,18 +138,6 @@ a:active {
 
 .side-button-1 .side-close {
   display: none;
-}
-
-#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
-  display: none;
-}
-
-#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
-  display: block;
-}
-
-#side-checkbox:checked + .side-panel {
-  left: 2.5vw;
 }
 
 #download {

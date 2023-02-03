@@ -1,10 +1,5 @@
 # Abyss-Slasher-page
-Курсовое проектирование
+course project by <b>Sakovich Alexander</b>
 #
-Новый макет теперь по этому адресу: https://www.figma.com/file/1nvrJzluPppvmq8MAqWifX/Abyss-Slayer%5BNew%3F%5D?node-id=49%3A2
-#
-#
-Кстати проект Саковича Александра
-#
-Ссылка на репозиторий восстановлена и теперь статичная, как оказалось я перепутал почты и не туда всё скинул
+<b>Prototype</b>: https://www.figma.com/file/1nvrJzluPppvmq8MAqWifX/Abyss-Slayer%5BNew%3F%5D?node-id=49%3A2
 #
